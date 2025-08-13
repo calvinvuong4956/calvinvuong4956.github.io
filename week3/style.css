@@ -1,0 +1,48 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  /* 16px = 1rem */
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+p {
+  /* width size of texts and box */
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: rgb(234, 251, 255);
+  /* min-height / max-height = text must fit in box. Larger min-height = more box area, vice-versa*/
+  min-height: 30px;
+  /* Creates space between two paragraphs */
+  /* margin-left-bottom-right-up to move the paragraphs around */
+  margin-bottom: 30px;
+  /* Creates space between box and text */
+  padding: 20px;
+}
+
+.box2 {
+  line-height: 140px;
+}
+
+/* In-line element separating elements from the same block */
+span {
+  /* Display block = Puts element on new line */
+  display: block;
+  font-size: 55px;
+  font-weight: bold;
+  color: rgb(34, 132, 252);
+}
+
+ul {
+  font-weight: bold;
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  justify-content: center;
+  padding: 18px;
+}
