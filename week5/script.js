@@ -78,3 +78,38 @@ for (let i = 0; i < stud.length; i++) {
   console.log("value of i", i);
   console.log("hello", stud[i]);
 }
+
+// declaring/defining a Function
+let d = 10;
+let e = 40;
+
+function add(d, e) {
+  let f = d + e;
+  console.log("value of f", f);
+  return f;
+}
+
+function subtract(d, e) {
+  let f = d - e;
+  console.log("value of f", f);
+  return f;
+}
+
+function greet(name) {
+  let newName = name.toUpperCase();
+  let msg = "HELLO" + newName;
+  console.log(msg);
+  return msg;
+}
+
+// calling/executing a function
+let sum = add(d, e);
+console.log("value of sum", sum);
+let sum2 = add(90, 5999);
+let sum3 = add(100, 8329);
+
+let balance = subtract(100, 35);
+console.log("value of balance", balance);
+
+let name2 = "Calvin";
+greet(name2);
