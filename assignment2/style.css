@@ -1,0 +1,179 @@
+:root {
+  /* --primary-bg-color: #f4f4f4; */
+  --text-color: #afafaf;
+  --p-bar-color: #333;
+  --footer-color: #e2e2e2;
+  --main-btn-bg-color: #938989;
+}
+
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  /* background-color: var(--primary-bg-color); */
+  background: #171717;
+  background: linear-gradient(
+    180deg,
+    rgba(23, 23, 23, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add additional styles as needed */
+
+/* Create a container for the main content */
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Header styling */
+header {
+  /* background-color: var(--p-bar-color); */
+  color: var(--footer-color);
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Navigation styling */
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Media player styling */
+
+.music-cover {
+  border-radius: 7px;
+}
+
+.media-player {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.media-player video {
+  max-width: 100%;
+}
+
+.next-previous {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.pause-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 27, 27, 0.596);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  pointer-events: none;
+}
+
+.pause-icon {
+  width: 64px;
+  height: 64px;
+  opacity: 0.9;
+}
+
+.music-cover-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.music-cover {
+  display: block;
+  border-radius: 7px;
+}
+
+/* .custom-controls {
+display: flex;
+justify-content: space-around;
+align-items: center;
+  gap: 1rem;
+  margin-top: 12px;
+  width: 100%;
+} */
+
+/* .custom-controls button {
+  background-color: var(--main-btn-bg-color);
+  color: var(--footer-color);
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+} */
+
+.progress-bar {
+  flex: 1;
+  /* width: 100%; */
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: var(--p-bar-color);
+  width: 0;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+/* Footer styling */
+footer {
+  /* background-color: var(--p-bar-color); */
+  color: var(--footer-color);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 100%;
+}
