@@ -85,7 +85,7 @@ console.log(muteUnmuteImg);
 
 // this code makes it so the volume and its icon is UNMUTED upon initial startup of the website
 audioM.muted = false;
-muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png";
+muteUnmuteImg.src = "https://i.imgur.com/K0D8yBr.png";
 
 // - addEventListener to code "CLICK" to button
 muteUnmuteButton.addEventListener("click", toggleAudio);
@@ -95,11 +95,10 @@ muteUnmuteButton.addEventListener("click", toggleAudio);
 function toggleAudio() {
   if (audioM.muted) {
     audioM.muted = false;
-    muteUnmuteImg.src =
-      "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png";
+    muteUnmuteImg.src = "https://i.imgur.com/K0D8yBr.png";
   } else {
     audioM.muted = true;
-    muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
+    muteUnmuteImg.src = "https://i.imgur.com/9MC2Fz0.png";
   }
 }
 
