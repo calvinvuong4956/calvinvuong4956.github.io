@@ -1,7 +1,7 @@
 :root {
   /* --primary-bg-color: #f4f4f4; */
   --text-color: #afafaf;
-  --p-bar-color: #333;
+  --p-bar-color: #535353;
   --footer-color: #e2e2e2;
   --main-btn-bg-color: #938989;
 }
@@ -99,6 +99,15 @@ nav a:hover {
   margin-top: 12px;
 }
 
+.next-previous button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
 .pause-overlay {
   position: absolute;
   top: 0;
@@ -154,7 +163,7 @@ align-items: center;
   /* width: 100%; */
   height: 10px;
   border-radius: 5px;
-  background-color: #ddd;
+  background-color: #c4c4c4;
   overflow: hidden;
 }
 
