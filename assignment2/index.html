@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- added brand name for tab recognition -->
     <title>study.</title>
     <!-- add the font family of your choice -->
     <link rel="stylesheet" href="reset.css" />
@@ -10,18 +11,20 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- Removed header section as I've decided for the brand name, "study," to be put in the bottom. A simple design choice  -->
     <!-- Header Section -->
     <!-- <header>
       <h1>Media Player Website</h1>
     </header> -->
 
+    <!-- Decided to use navigation list as an interactive playlist. -->
     <!-- Navigation Section -->
     <nav>
       <ul>
+        <!-- id for each song for unique interactive purposes. -->
         <li><a href="#" id="jazz-nav">Jazz</a></li>
         <li><a href="#" id="meditation-nav">Meditation</a></li>
         <li><a href="#" id="lofi-nav">Lofi</a></li>
-        <!-- Add or remove navigation items as needed -->
       </ul>
     </nav>
 
@@ -29,6 +32,7 @@
     <main class="container">
       <!-- Media Player Section -->
       <div class="media-player">
+        <!-- used audio instead since I planned on making a music player, which deals with "mp3" rather than "mp4." -->
         <audio
           src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3"
           id="meditation"
@@ -40,7 +44,9 @@
           />
         </video> -->
 
+        <!-- required unique div and class for the music album cover so the pause overlay only affects the image and not the next-previous-progressbar-mute controls underneath it. -->
         <div class="music-cover-container">
+          <!-- music images required a class, to retain the same effects that will be applied over the 3 different song album covers. -->
           <img
             class="music-cover"
             src="https://images.stockcake.com/public/0/d/f/0df9e740-854f-422d-b01a-37baf403883a_large/silhouette-meditation-outdoors-stockcake.jpg"
@@ -48,6 +54,8 @@
           />
         </div>
 
+        <!-- this div named "next-previous" is basically for all the controls (next, previous, progressbar, mute/unmute) to be on the same block 
+         I definitely could have given a better, more intuitive name like "controls" -->
         <div class="next-previous">
           <button id="next">
             <img
@@ -82,6 +90,8 @@
           </button>
         </div>
 
+        <!-- The rest of the information below was not needed, except for the footer section, which is where I decided to put the brand name of the media player -->
+
         <!-- <div class="custom-controls">
         <button id="play-pause-btn" onclick="togglePlayPause()">
             <img
@@ -106,8 +116,11 @@
     </main>
 
     <!-- Footer Section -->
+    <!-- I decided to give my website a very simple name of "study." for the intention of it being used for STRICT studying.
+      A very straight-forward name for very straight-forward studying intentions. -->
     <footer>
       <p>study.</p>
+
       <!-- <a href="https://icons8.com/icon/59862/play">Play</a> icon by
       <a href="https://icons8.com">Icons8</a>
       <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by

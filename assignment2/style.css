@@ -1,8 +1,10 @@
 :root {
   /* --primary-bg-color: #f4f4f4; */
+  /* Changed names of some roots so it fits better in my context. */
+  /* Light colours used for texts and progress-bar to fit with my colour palette and provides good contrast and readibility with the black background. */
   --text-color: #afafaf;
   --p-bar-color: #535353;
-  --footer-color: #e2e2e2;
+  --footer-color: rgb(219, 219, 219);
   --main-btn-bg-color: #938989;
 }
 
@@ -17,6 +19,7 @@ ul {
 body {
   font-family: "Arial", sans-serif;
   /* background-color: var(--primary-bg-color); */
+  /* I went with a very SLIGHT linear gradient of black instead of a static background colour to add some spice and personality to the website */
   background: #171717;
   background: linear-gradient(
     180deg,
@@ -35,6 +38,8 @@ body {
 
 /* Create a container for the main content */
 .container {
+  /* I reduced the max width from 1000px to 500px because I wanted the overall media player to be smaller and fit with what I envisioned it to look like.
+  Also, 500px helped make every element fit together to the center of the screen. If it was anything more or less, the controls at the bottom would not be symmetrical with the music cover. */
   max-width: 500px;
   width: 100%;
   padding: 10px;
@@ -71,12 +76,14 @@ nav a {
   color: var(--text-color);
 }
 
+/* A simple hover code, making an underline appear under the list item that is being hovered over. */
 nav a:hover {
   text-decoration: underline;
 }
 
 /* Media player styling */
 
+/* Gave a little rounding to the images for a softer, more comfortable appearance. */
 .music-cover {
   border-radius: 7px;
 }
@@ -90,6 +97,7 @@ nav a:hover {
   max-width: 100%;
 }
 
+/* This code gives all controls even space within this one block. */
 .next-previous {
   display: flex;
   justify-content: space-between;
@@ -99,6 +107,7 @@ nav a:hover {
   margin-top: 12px;
 }
 
+/* removed the default <button> code aesthetics. I only wanted the transparent images of the controls. */
 .next-previous button {
   border: none;
   background: transparent;
@@ -108,6 +117,7 @@ nav a:hover {
   cursor: pointer;
 }
 
+/* Pause overlay aesthetics */
 .pause-overlay {
   position: absolute;
   top: 0;
@@ -131,6 +141,7 @@ nav a:hover {
 .music-cover-container {
   position: relative;
   display: inline-block;
+  /* Cursor pointer over the container to signal existence of an interaction. */
   cursor: pointer;
 }
 .music-cover {
@@ -159,6 +170,8 @@ align-items: center;
 } */
 
 .progress-bar {
+  /* flex used so the progress bar takes up all avaliable space that the buttons are not taking.
+  More accurate and intuitive than width, since width 100% means that the progress bar is told to take up the remaining space of the BOX, which leaves no headroom for any other future buttons that may be implemented in the same box */
   flex: 1;
   /* width: 100%; */
   height: 10px;
