@@ -124,6 +124,7 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
+  /* I decided to go with the colour of the pause icon to be subtly dark and transparent as it helps clearly and pleasantly distinguish between when the song is being PLAYED and when its PAUSED.*/
   background-color: rgba(27, 27, 27, 0.596);
   display: flex;
   justify-content: center;
