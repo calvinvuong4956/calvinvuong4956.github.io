@@ -30,6 +30,9 @@ window.onload = function () {
     `;
 
     cardContainer.addEventListener("click", function () {
+      const flipSound = new Audio("FlipCards.mp3");
+      flipSound.play();
+
       this.querySelector(".card").classList.toggle("flipped");
     });
 
@@ -49,6 +52,9 @@ newPackButton.addEventListener("click", function () {
 });
 
 flipAllButton.addEventListener("click", function () {
+  const flipSound = new Audio("FlipCards.mp3");
+  flipSound.play();
+
   const allCards = document.querySelectorAll(".card");
   allCards.forEach((card) => {
     card.classList.add("flipped");

@@ -98,3 +98,10 @@ p1 {
   filter: drop-shadow(0 0 60px rgba(255, 193, 59, 0.795));
   transition: scale 0.4s ease-in, filter 0.5s linear;
 }
+
+footer {
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-style: italic;
+}

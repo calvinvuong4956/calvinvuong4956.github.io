@@ -137,3 +137,11 @@ p {
 .button:hover {
   scale: 1.03;
 }
+
+footer {
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-style: italic;
+  opacity: 75%;
+}

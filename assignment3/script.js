@@ -14,6 +14,9 @@ function randomNumber(min, max) {
 }
 
 packImage.addEventListener("click", function () {
+  const packOpenSound = new Audio("OpenPack.mp3");
+  packOpenSound.play();
+
   let selectedCards = [];
   // i<5 because there are 5 cards in one pack
   for (let i = 0; i < 5; i++) {
@@ -29,5 +32,7 @@ packImage.addEventListener("click", function () {
 
   // Save cards to localStorage so when your refresh the "openpack" page, it will re-load the same cards that were opened and not be refreshed with new cards
   localStorage.setItem("currentPack", JSON.stringify(selectedCards));
-  location.href = "openpack.html";
+  setTimeout(() => {
+    location.href = "openpack.html";
+  }, 500);
 });
