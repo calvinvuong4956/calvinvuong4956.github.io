@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Same title name between both pages to retain consistency for the same website -->
     <title>ValCards</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="openpack.css" />
@@ -17,6 +18,11 @@
     <p>Click to Reveal</p>
     <div class="cards-container" id="cards-container"></div>
     <div class="button-container">
+      <!-- id for each button since each button has a unique function
+       Buttons are deliberately placed to satisfy user-intuition:
+       - "Choose New Pack" placed on the left, because it's basically going BACK to the pack page, and typically the "Back" button is on the left
+       - "Open Another" placed on the right, it's interaction is the opposite of Choose Another Pack 
+       - "Flip Again" placed in the middle, for speed and convenience of the interaction -->
       <button class="button" id="newPack">Choose New Pack</button>
       <button class="button" id="flipAll">Flip All</button>
       <button class="button" id="openAnother">Open Another</button>

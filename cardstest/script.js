@@ -29,7 +29,7 @@ function openPack() {
     // the last card (i=4) will be rare, chosen from the "rare-card" pool between 1-36
     let num = 1;
     if (i == 4) {
-      num = randomNumber(1, 36);
+      num = randomNumber(0, 36);
     } else {
       num = randomNumber(37, 80);
     }

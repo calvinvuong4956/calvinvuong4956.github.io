@@ -49,6 +49,7 @@ p {
   font-size: 19px;
   margin-bottom: 30px;
 }
+/* The code above is all the same as index.html page to retain stylistic consistency */
 
 .cards-container {
   display: flex;
@@ -64,6 +65,7 @@ p {
   height: 300px;
   perspective: 1000px;
   cursor: pointer;
+  /* Give subtle hover animation to each card for a more responsive and engaging user-experience */
   transition: scale 0.15s ease-in-out;
 }
 
@@ -92,6 +94,7 @@ p {
   overflow: hidden;
 }
 
+/* Subtle drop shadow given both card-back/front to increase card visibility */
 .card-back {
   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.236));
 }
@@ -115,6 +118,7 @@ p {
   border-radius: 12px;
 }
 
+/* Manual translation of the three buttons for symmetry purposes */
 .button-container {
   transform: translateX(-18px);
 }

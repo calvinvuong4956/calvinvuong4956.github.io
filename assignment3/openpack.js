@@ -18,6 +18,7 @@ window.onload = function () {
     const cardContainer = document.createElement("div");
     cardContainer.className = "card-container";
 
+    // I made the "BACK Val Card.png" image from Adobe Illustrator
     cardContainer.innerHTML = `
       <div class="card">
         <div class="card-face card-back">
@@ -28,8 +29,10 @@ window.onload = function () {
         </div>
       </div>
     `;
+    // All the "Val Cards" were edited transparent and individualised by me.
 
     cardContainer.addEventListener("click", function () {
+      // Audio was sourced from YouTube: https://www.youtube.com/watch?v=2jktMTAt2UI
       const flipSound = new Audio("FlipCards.mp3");
       flipSound.play();
 
@@ -47,11 +50,13 @@ console.log(flipAllButton);
 const openAnotherButton = document.querySelector("#openAnother");
 console.log(openAnotherButton);
 
+// Choose New Pack Button re-directs back to index.html page
 newPackButton.addEventListener("click", function () {
   location.href = "index.html";
 });
 
 flipAllButton.addEventListener("click", function () {
+  // Flip all button also plays the same sound as manually clicking each card
   const flipSound = new Audio("FlipCards.mp3");
   flipSound.play();
 
@@ -77,6 +82,7 @@ openAnotherButton.addEventListener("click", function () {
     selectedCards.push(num);
   }
 
+  // Open Another Button pre-loads new cards then refreshes the page
   localStorage.setItem("currentPack", JSON.stringify(selectedCards));
   location.reload();
 });

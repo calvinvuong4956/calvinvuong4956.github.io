@@ -1,4 +1,5 @@
 :root {
+  /* an off-white to make texts blend in better and not pop-out too much from the black. Off-white is less jarring than plain white */
   --text-color: #f6f6f6;
 }
 
@@ -12,6 +13,7 @@ p {
 body {
   font-family: "Arial", sans-serif;
   background: #171717;
+  /* Dark background colour with a tiny bit of black-grey gradient to give the website some life */
   background: linear-gradient(
     0deg,
     rgba(23, 23, 23, 1) 0%,
@@ -34,6 +36,9 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
+  /* Orange colour used to fit the orange-gold theme of VALORANT Champions
+  Wanted the orange to start from the bottom-up as it helps lift-up / boost the appearance of the asset above it i.e. the pack-cover image
+  It helps direct the eyes to the pack-cover */
   background: linear-gradient(
     0deg,
     rgba(255, 174, 60, 0.247) 0%,
@@ -63,6 +68,10 @@ header a {
   cursor: pointer;
 }
 
+/* Little hover color-animation over the brand-name heading, signalling existence of an interaction
+Did not want to use excessive scale animations as it may seem disorientating
++ many other assets already have a scale animation
++ the heading is not the main focus of the website, does not need very attention-grabbing movements. */
 header a:hover h1 {
   color: #b3b3b3;
   transition: color 0.1s ease-in-out;
@@ -80,6 +89,7 @@ p {
 
 p1 {
   font-size: 19px;
+  /* Subtle text-shadow needed for good visibility of the pack-name when other colour-animations happen in the background  */
   text-shadow: 2px 2px 7px black;
 }
 
@@ -87,14 +97,17 @@ p1 {
   width: 300px;
   height: auto;
   margin-top: 85px;
+  /* same visibility reason as pack-name for use of drop-shadow, which tells audiences that the pack-cover-img is the main element of the website */
   filter: drop-shadow(0 0 8px rgb(0, 0, 0));
-
+  /* different transition values used for hover-on/off for greater dynamics */
   transition: scale 0.4s ease-out, filter 0.2s ease-out;
 }
 
 .val-pack:hover {
   cursor: pointer;
+  /* I want a clean, minimalistic, pleasant but also snappy feeling when interacting with my website. This is the reason why my animations are subtle and are given enough time to ease in */
   scale: 1.05;
+  /* Transition drop-shadow colour to lighter orange to fit gold theme of VALORANT Champions and for good contrast between the dark-orange background */
   filter: drop-shadow(0 0 60px rgba(255, 193, 59, 0.795));
   transition: scale 0.4s ease-in, filter 0.5s linear;
 }
@@ -104,4 +117,6 @@ footer {
   margin-bottom: 10px;
   font-size: 10px;
   font-style: italic;
+  /* Less opacity since footer is not something I want to be gaining much attention */
+  opacity: 75%;
 }
