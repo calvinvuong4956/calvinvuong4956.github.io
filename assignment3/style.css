@@ -1,0 +1,100 @@
+:root {
+  --text-color: #f6f6f6;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #171717;
+  background: linear-gradient(
+    0deg,
+    rgba(23, 23, 23, 1) 0%,
+    rgb(13, 13, 13) 100%
+  );
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  position: relative;
+}
+
+/* Overlay of BACKGROUND GLOW when hovering over pack-cover-image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 174, 60, 0.247) 0%,
+    transparent 100%
+  );
+  opacity: 0; /* Overlay starts invisible */
+  transition: opacity 0.8s ease;
+  pointer-events: none; /* Makes it so clicks are not obstructed by this overlay */
+  z-index: -1; /* The overlay is behind the main body background */
+}
+
+body.glow::before {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #eeeeee;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+header a:hover h1 {
+  color: #b3b3b3;
+  transition: color 0.1s ease-in-out;
+}
+
+p {
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.pack-name {
+  margin-top: 10px;
+  text-align: center;
+}
+
+p1 {
+  font-size: 19px;
+  text-shadow: 2px 2px 7px black;
+}
+
+.val-pack {
+  width: 300px;
+  height: auto;
+  margin-top: 85px;
+  filter: drop-shadow(0 0 8px rgb(0, 0, 0));
+
+  transition: scale 0.4s ease-out, filter 0.2s ease-out;
+}
+
+.val-pack:hover {
+  cursor: pointer;
+  scale: 1.05;
+  filter: drop-shadow(0 0 60px rgba(255, 193, 59, 0.795));
+  transition: scale 0.4s ease-in, filter 0.5s linear;
+}
