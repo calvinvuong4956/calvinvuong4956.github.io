@@ -37,6 +37,7 @@ packImage.addEventListener("click", function () {
 
   // Save cards to localStorage so when your refresh the "openpack" page, it will re-load the same cards that were opened and not be refreshed with new cards
   localStorage.setItem("currentPack", JSON.stringify(selectedCards));
+  //  500ms delay before the webpage directs to openPack.html page to allow the openPack sound effect to fully play
   setTimeout(() => {
     location.href = "openpack.html";
   }, 500);
