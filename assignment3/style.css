@@ -1,5 +1,6 @@
 :root {
-  /* an off-white to make texts blend in better and not pop-out too much from the black. Off-white is less jarring than plain white */
+  /* an off-white to make texts blend in better and not pop-out too much from the black. 
+  Off-white is less jarring than plain white */
   --text-color: #f6f6f6;
 }
 
@@ -105,7 +106,8 @@ p1 {
 
 .val-pack:hover {
   cursor: pointer;
-  /* I want a clean, minimalistic, pleasant but also snappy feeling when interacting with my website. This is the reason why my animations are subtle and are given enough time to ease in */
+  /* I want a clean, minimalistic, pleasant but also snappy feeling when interacting with my website.
+  This is the reason why my animations are subtle and are given enough time to ease in */
   scale: 1.05;
   /* Transition drop-shadow colour to lighter orange to fit gold theme of VALORANT Champions and for good contrast between the dark-orange background */
   filter: drop-shadow(0 0 60px rgba(255, 193, 59, 0.795));
